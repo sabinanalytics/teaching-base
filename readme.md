@@ -14,5 +14,5 @@ docker-compose up
 We use `buildx` build images for Intel and M1 CPU machines.
 
 ```{bash}
-docker buildx build . --platform=linux/amd64,linux/arm64/v8 -t ekatsevi/teaching-base --push
+docker buildx build . --platform=linux/amd64,linux/arm64/v8 -t sabinanalytics/teaching-base --push
 ```
