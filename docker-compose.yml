@@ -1,0 +1,13 @@
+version: "1.0"
+services: 
+  stat-7010:
+    build: .
+    image: sabinanalytics/teaching-base
+    ports: 
+      - "8787:8787"
+    environment: 
+      - ROOT=TRUE
+      - PASSWORD=password
+      - DISABLE_AUTH=true
+    volumes: 
+      - .:/home/rstudio
